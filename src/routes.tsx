@@ -6,6 +6,8 @@ import ScreenEmailVerification from "./pages/authentication/screen-email-verific
 import ScreenOtpVerification from "./pages/authentication/screen-otp-verification";
 import ScreenLanding from "./pages/authentication/screen-landing";
 import ScreenLogin from "./pages/authentication/screen-login";
+import StaffLayout from "./pages/staff/layout";
+import ScreenStaffDashboard from "./pages/staff/screen_staff_dashboard";
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
         <Route path="verify-otp" element={<ScreenOtpVerification />} />
         <Route path="privacy-policy" element={<ScreenPrivacy />} />
         <Route path="terms-condition" element={<ScreenTermsCondition />} />
+      </Route>
+      <Route path="/staff" element={<StaffLayout />}>
+        <Route index={true} element={<ScreenStaffDashboard />} />
       </Route>
     </Routes>
   );

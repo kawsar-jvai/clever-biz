@@ -120,3 +120,19 @@ export const OtpTimer: React.FC<OtpTimerProps> = ({
   );
 };
 /* <<<<<<<<===================================================== OtpTimer */
+
+/* Header ===========================================================>>>>> */
+
+export const Header = () => {
+  return (
+    <header className="bg-sidebar shadow-md p-8">
+      <div className="flex items-center justify-between">
+        <div></div>
+        <h2 className="text-xl font-semibold">Page Title</h2>
+        <div className="bg-gray-200 rounded-full w-8 h-8"></div>
+      </div>
+    </header>
+  );
+};
+
+/* <<<<<<<<===================================================== Header */

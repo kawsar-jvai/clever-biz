@@ -4,6 +4,8 @@
 @theme {
   --color-primary: #16183a;
   --color-accent: #0d38ac;
+  --color-sidebar: #141527;
+  --color-dashboard: #0c0d1f;
   --color-primary-text: #e1e8ff;
   --color-input-placeholder: #5f6175;
   --color-input: #202c4e;
@@ -106,10 +108,10 @@
 }
 
 @utility content-gap-start {
-  @apply ps-8;
+  @apply ps-2 md:ps-8;
 }
 @utility content-gap-end {
-  @apply pe-8;
+  @apply pe-2 md:pe-8;
 }
 
 @utility content-container {
